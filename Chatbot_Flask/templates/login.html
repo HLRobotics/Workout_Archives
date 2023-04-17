@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Trenser Bot</title>
+</head>
+<body>
+    <form action="login_page" method="POST" class="w3-container">
+        <table >
+            <tr>
+                <td align="center"><img src="{{url_for('static', filename = 'logo.png')}}" width="25%" alt="Cannot Display"/></td>
+            </tr>
+            <tr>
+                <td align ="center"><img src="{{url_for('static', filename = 'bot.avif')}}" width="25%" alt="Cannot Display"/></td>
+            </tr>
+        </table>
+
+        <table align="center" >
+            <tr>                
+                <td><input class="w3-input" type="text" name="employee_id" placeholder="Employee ID" style="width: 400px; height: 30px;" /></td>
+            </tr>
+            <tr>
+                <td><input class="w3-input" type="password" name="password" placeholder="password" style="width: 400px; height: 30px;"/></td>
+            </tr>
+            <tr>               
+                <td><input class="w3-bar w3-green" type="submit" value="Login" style="width: 400px; height: 30px;" method="POST" /></td>                
+            </tr>
+            <tr>
+                <td><input class="w3-bar w3-red" type="reset" value="Reset" style="width: 400px; height: 30px;"/></td>
+            </tr>     
+        </table>
+       
+    </form>
+  
+</body>
+</html>

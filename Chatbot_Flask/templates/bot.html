@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Trenser HR Bot</title>
+
+</head>
+<body>
+    <!-- Welcome {{id}} -->
+
+    <form action="bot_reply" method="POST" class="w3-container">
+        <table>
+            <tr>
+                <td align="center"><img src="{{url_for('static', filename = 'logo.png')}}" width="25%" alt="Cannot Display"/></td>
+            </tr>
+            <tr>
+                <td align ="center"><img src="{{url_for('static', filename = 'bot.avif')}}" width="25%" alt="Cannot Display"/></td>
+            </tr>
+        </table>
+        <table align="center">
+            <tr>
+                <td><input class="w3-input" type="text" name="query" placeholder="Your questions" style="width: 400px; height: 50px;" /></td>
+                <td><input class="w3-bar w3-green" type="submit" value="Search" style="width: 100px; height: 50px;" method="POST" /></td>
+            </tr>           
+        </table>
+        <table align="center">
+            <tr>
+                <td><textarea rows="10" cols="60" >{{reply}}</textarea></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
