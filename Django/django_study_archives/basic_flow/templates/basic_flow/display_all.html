@@ -1,14 +1,20 @@
-{% load static%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Include Link</title>
-    <link rel="stylesheet" type="text/css" href="{%static 'css/styles.css'%}"/>
+    <title>Display Notes</title>
 </head>
 <body>
-    <p class="linker">This is the indirect link</p>
+    <table align="center">
+        {% for note in display%}
+        <tr>
+            <td>{{note.title}}</td>
+            <td>{{note.content}}</td>
+        </tr>
+       {%endfor%}
+    </table>
+    
 </body>
 </html>

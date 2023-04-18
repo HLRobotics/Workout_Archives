@@ -20,5 +20,8 @@ from basic_flow import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('direct/', views.load_mainpage),
-    path('indirect/',include("basic_flow.urls"))
+    path('view_al/', include("basic_flow.urls")),
+    path('indirect/',include("basic_flow.urls")),
+    path('view_all/', views.list_all),
+    
 ]
